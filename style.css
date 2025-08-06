@@ -1,63 +1,67 @@
 body {
   margin: 0;
-  font-family: "Segoe UI", sans-serif;
-  background: #f0f0f0;
-}
-h1 {
-  margin: 0;
-  padding: 10px;
-  background: #0074cc;
-  color: white;
-  text-align: center;
+  font-family: Arial, sans-serif;
 }
 #map {
-  height: 80vh;
+  position: absolute;
+  top: 0;
+  left: 300px;
+  right: 0;
+  bottom: 0;
+}
+#sidebar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300px;
+  bottom: 0;
+  background: #f0f0f0;
+  padding: 15px;
+  overflow-y: auto;
+  box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+}
+#sidebar h2, h3 {
+  margin-top: 0;
+}
+button {
+  padding: 8px 12px;
+  margin-top: 8px;
   width: 100%;
+  background-color: #0080ff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
-#weather {
-  padding: 10px;
-  text-align: center;
-  font-weight: bold;
-  background: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-#alertBox {
-  position: fixed;
-  top: 10px;
-  right: 10px;
-  background: #e74c3c;
-  color: #fff;
-  padding: 12px 20px;
-  border-radius: 5px;
-  font-weight: bold;
-  z-index: 9999;
-  animation: pulse 1s infinite;
-}
-.hidden {
-  display: none;
-}
-@keyframes pulse {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0.5; }
+input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 6px;
+  box-sizing: border-box;
 }
 .legend {
   position: absolute;
   bottom: 20px;
-  left: 20px;
+  right: 20px;
   background: white;
+  border: 1px solid #999;
   padding: 10px;
-  border-radius: 6px;
-  box-shadow: 0 0 5px rgba(0,0,0,0.2);
-  font-size: 14px;
-  line-height: 1.6;
+  border-radius: 5px;
 }
 .legend-box {
+  display: inline-block;
   width: 16px;
   height: 16px;
-  display: inline-block;
-  margin-right: 8px;
-  vertical-align: middle;
+  margin-right: 6px;
 }
 .red { background: red; }
 .yellow { background: yellow; }
 .blue { background: blue; }
+.gray { background: gray; }
+
+#routeInfo {
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  color: green;
+}
