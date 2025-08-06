@@ -9,23 +9,28 @@
 </head>
 <body>
   <div id="sidebar">
-    <h2>⚠️ Flood Dashboard</h2>
-    <div id="weather">Loading weather...</div>
-    <button id="refreshFlood">Refresh Flood Zones</button>
+    <h2>⚠️ Kerala Flood Dashboard</h2>
+    <div id="weather">Fetching live weather...</div>
+    <button id="refreshFlood">🔁 Refresh Flood Zones</button>
+
     <div id="routeControls">
-      <input id="fromAddr" placeholder="From location"/>
-      <input id="toAddr" placeholder="To destination"/>
-      <button id="calcRoute">Find Safe Route</button>
+      <h3>🚗 Safe Route Planner</h3>
+      <input id="fromAddr" placeholder="From (auto uses your location)"/>
+      <input id="toAddr" placeholder="To (click button to simulate)"/>
+      <button id="calcRoute">Suggest Safe Route</button>
       <div id="routeInfo"></div>
     </div>
   </div>
+
   <div id="map"></div>
+
   <div class="legend">
-    <div><span class="legend-box red"></span> High</div>
+    <div><span class="legend-box red"></span> High Flood</div>
     <div><span class="legend-box yellow"></span> Medium</div>
     <div><span class="legend-box blue"></span> Low</div>
-    <div><span class="legend-box gray"></span> Road Closed</div>
+    <div><span class="legend-box gray"></span> Road (Flooded)</div>
   </div>
+
   <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
   <script src="script.js"></script>
 </body>
