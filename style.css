@@ -1,0 +1,68 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f4f4f4;
+}
+
+h1 {
+  text-align: center;
+  background: #0077cc;
+  color: white;
+  padding: 10px;
+  margin: 0;
+}
+
+#map {
+  height: 80vh;
+  width: 100%;
+}
+
+#weather {
+  text-align: center;
+  padding: 10px;
+  background: #fff;
+  font-weight: bold;
+}
+
+#alertBox {
+  background-color: #e74c3c;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+  animation: pulse 1s infinite;
+}
+
+.hidden {
+  display: none;
+}
+
+@keyframes pulse {
+  0% { opacity: 1; }
+  50% { opacity: 0.4; }
+  100% { opacity: 1; }
+}
+
+.legend {
+  background: white;
+  padding: 10px;
+  border: 1px solid #ccc;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  z-index: 999;
+  font-size: 14px;
+  border-radius: 5px;
+}
+
+.legend-box {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+.red { background-color: red; }
+.yellow { background-color: yellow; }
+.blue { background-color: blue; }
