@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Flood Alert Navigation Map</title>
+  <link rel="stylesheet" href="style.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/leaflet/dist/leaflet.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet/dist/leaflet.css"/>
+</head>
+<body>
+  <h1>🌧️ Flood Alert Navigation Map</h1>
+  <div id="map"></div>
+  <div id="weather"></div>
+  <div id="alertBox" class="hidden">🚨 Heavy Rain Alert in Your Area!</div>
+
+  <div class="legend">
+    <h3>Flood Risk Zones</h3>
+    <div><span class="legend-box red"></span> High Risk (Red)</div>
+    <div><span class="legend-box yellow"></span> Medium Risk (Yellow)</div>
+    <div><span class="legend-box blue"></span> Low Risk (Blue)</div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
