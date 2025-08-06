@@ -1,68 +1,63 @@
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
-  background: #f4f4f4;
+  font-family: "Segoe UI", sans-serif;
+  background: #f0f0f0;
 }
-
 h1 {
-  text-align: center;
-  background: #0077cc;
-  color: white;
-  padding: 10px;
   margin: 0;
+  padding: 10px;
+  background: #0074cc;
+  color: white;
+  text-align: center;
 }
-
 #map {
   height: 80vh;
   width: 100%;
 }
-
 #weather {
-  text-align: center;
   padding: 10px;
+  text-align: center;
+  font-weight: bold;
   background: #fff;
-  font-weight: bold;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-
 #alertBox {
-  background-color: #e74c3c;
-  color: white;
-  padding: 10px;
-  text-align: center;
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  background: #e74c3c;
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 5px;
   font-weight: bold;
+  z-index: 9999;
   animation: pulse 1s infinite;
 }
-
 .hidden {
   display: none;
 }
-
 @keyframes pulse {
-  0% { opacity: 1; }
-  50% { opacity: 0.4; }
-  100% { opacity: 1; }
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
 }
-
 .legend {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
   background: white;
   padding: 10px;
-  border: 1px solid #ccc;
-  position: absolute;
-  bottom: 10px;
-  left: 10px;
-  z-index: 999;
+  border-radius: 6px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
   font-size: 14px;
-  border-radius: 5px;
+  line-height: 1.6;
 }
-
 .legend-box {
+  width: 16px;
+  height: 16px;
   display: inline-block;
-  width: 15px;
-  height: 15px;
-  margin-right: 5px;
+  margin-right: 8px;
   vertical-align: middle;
 }
-
-.red { background-color: red; }
-.yellow { background-color: yellow; }
-.blue { background-color: blue; }
+.red { background: red; }
+.yellow { background: yellow; }
+.blue { background: blue; }
