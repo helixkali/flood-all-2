@@ -1,26 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Flood Alert Navigation Map</title>
-  <link rel="stylesheet" href="style.css"/>
-  <script src="https://cdn.jsdelivr.net/npm/leaflet/dist/leaflet.js"></script>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet/dist/leaflet.css"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Kerala Live Flood Map</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
 </head>
 <body>
-  <h1>🌧️ Flood Alert Navigation Map</h1>
+  <h1>Kerala Live Flood Alert Map</h1>
   <div id="map"></div>
   <div id="weather"></div>
-  <div id="alertBox" class="hidden">🚨 Heavy Rain Alert in Your Area!</div>
-
+  <div id="alertBox" class="hidden">⚠️ Heavy Rain Alert Nearby!</div>
   <div class="legend">
-    <h3>Flood Risk Zones</h3>
-    <div><span class="legend-box red"></span> High Risk (Red)</div>
-    <div><span class="legend-box yellow"></span> Medium Risk (Yellow)</div>
-    <div><span class="legend-box blue"></span> Low Risk (Blue)</div>
+    <div><span class="legend-box red"></span> High Flood</div>
+    <div><span class="legend-box yellow"></span> Medium Flood</div>
+    <div><span class="legend-box blue"></span> Low Flood</div>
   </div>
-
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
