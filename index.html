@@ -1,25 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Kerala Live Flood Alert Map</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>Kerala Flood Navigator</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
 </head>
 <body>
-  <h1>🌊 Kerala Live Flood Alert Map</h1>
-  <div id="map"></div>
-  <div id="weather"></div>
-  <div id="alertBox" class="hidden">⚠️ Heavy Rain Alert Nearby!</div>
-
-  <div class="legend">
-    <h3>Flood Severity</h3>
-    <div><span class="legend-box red"></span> High Flood</div>
-    <div><span class="legend-box yellow"></span> Medium Flood</div>
-    <div><span class="legend-box blue"></span> Low Flood</div>
+  <div id="sidebar">
+    <h2>⚠️ Flood Dashboard</h2>
+    <div id="weather">Loading weather...</div>
+    <button id="refreshFlood">Refresh Flood Zones</button>
+    <div id="routeControls">
+      <input id="fromAddr" placeholder="From location"/>
+      <input id="toAddr" placeholder="To destination"/>
+      <button id="calcRoute">Find Safe Route</button>
+      <div id="routeInfo"></div>
+    </div>
   </div>
-
+  <div id="map"></div>
+  <div class="legend">
+    <div><span class="legend-box red"></span> High</div>
+    <div><span class="legend-box yellow"></span> Medium</div>
+    <div><span class="legend-box blue"></span> Low</div>
+    <div><span class="legend-box gray"></span> Road Closed</div>
+  </div>
   <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
   <script src="script.js"></script>
 </body>
